@@ -28,7 +28,8 @@ public class GoogleLoginAdapter implements LoginService{
 
 	@Override
 	public void loginWithService() {
-		// TODO Auto-generated method stub
+		userManager.login(user);
+		System.out.println(user.getFirstName() + " " + user.getLastName() + " google ile giriþ yaptý.");
 		
 	}
 
